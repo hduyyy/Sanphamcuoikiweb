@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign out</title>
+    <link rel="stylesheet" href="../signout/signout.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <ul id="nav">
+                <li><a href=""><img id="logo" src="../img/logo.png" alt=""></a></li>
+                <li><a href="../login/login.html" > Đăng nhập</a></li>
+            </ul>
+        </div>
+            <div class="sign">
+                <form  action="" method="post" onsubmit ="event.preventDefault()">                                                 
+                    <h3><font color="white">Đăng Kí</font></h3>
+                    <h5><font color="white">Tạo tài khoản Miễn Phí</font></h5>
+                    <br>
+                    <div class="a1">
+                        <input id="firstname" type="text" name="Họ" required>
+                        <label id="ho" for="">Họ</label>
+                        <input id="name" type="text" name="Tên" required>
+                        <label id="ten" for="">Tên</label >         
+                    </div>
+                    <div class="a1">
+                        <input id="username" type="text" name="tnd" required>
+                        <label id="tnd" for="">Tên người dùng</label>
+                    </div>
+                    <div class="a1">
+                        <input id="password" type="password" name="mk" required>
+                        <label id="mk" for="">Mật Khẩu</label>
+                        <input id="password2" type="password" name="xn" required>
+                        <label id="xn" for="">Xác nhận</label>
+                    </div>
+                    <div class="dk"><input type="submit" value="Đăng kí" id="submit"  onclick  ="signout()"></div>
+                </form>
+            </div>
+        
+    </div>
+    <script src="../signout/signout.js"></script>
+   
+</body>
+</html>

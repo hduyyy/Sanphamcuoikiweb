@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+      <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trang chủ</title>
+</head>
+<body>
+	  <script type="text/javascript">
+	  	var num=0;
+        function button1()
+        {
+            var heart1=document.getElementById('heart1');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart1.src=img[num];
+        }
+        function button2()
+        {
+            var heart2=document.getElementById('heart2');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart2.src=img[num];
+        }
+        function button3()
+        {
+            var heart3=document.getElementById('heart3');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart3.src=img[num];
+        }
+	  </script>
+      <style>
+      	*{
+      		list-style-type: none;
+      		text-decoration: none;
+      		line-height: 25px;
+      		font-size: 20px;
+      		color: black;
+      	}
+        .a1{
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            margin-top: -15px;
+            color: white;
+        }
+      	.menu{
+      		background-color: black;
+      		height: 50px;
+      		margin-left: 330px;
+      		width: 750px;
+      	}
+      	.menu a{
+      		width: 150px;
+      		height: 50px;
+      		float: left;
+      		padding-top: 10px;
+      		padding-left: 30px;
+      		color: white;
+      	}
+      	.menu a:hover{
+      		color: black;
+      		padding-top: 10px;  
+      		padding-left:30px;   
+       	}
+       	.a2{
+       		width: 100%;
+       	}
+       	.cot1{
+       		width: 200px;
+       		line-height: 40px;
+       		padding-left: 20px;
+       		background-color: #DDDDDD;
+       	}
+        .baiviet{
+            margin-left: 250px;
+            width: 800px;
+            background-color: #DDDDDD;
+        }
+        .anhdaidien{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .anh1{
+       		width:100px;
+       		height : 100px;
+       		border-radius: 50%;
+       	}
+      </style>
+      <div class="a1">
+      	<ul class="menu">
+            <li><a href="../mxh/index.html"><img width="35px" src="../img/iconhomewhite.png" alt="Home"></a></li>
+            <li><a href="banbe.html"><img width="35px" src="../img/iconfriend.png" alt=""></a></li>
+            <li><a href="nhom.html"><img src="../img/icongroup.png"  width="35px" alt=""></a></li>
+          <li><a href="../signout/signout.html"><img src="../img/iconsignout.png" width="35px" alt=""></a></li>
+      	</ul>
+        </div>
+        <br>
+        <img width="100%" height="500px" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2K6P4qcrQaWj8gR0dBeXK1AGTeg6AAiID8CFFYVtOGVW4t_Rk">
+      <div>
+      	<img class="anh1" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2K6P4qcrQaWj8gR0dBeXK1AGTeg6AAiID8CFFYVtOGVW4t_Rk" >
+      	<b style="font-size: 23px;">NTPTW T2</b>
+       <br>
+       56 thành viên
+      </div>
+      <br>
+      <div class="baiviet">
+                <a href=""><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" ><b> Phuong Anh</b></a> đã đăng trong<a href=""><b> NTPTW T2</b></a>
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">07:07 19/12/2022</div> <br>
+Thông báo ❌ Hnay thầy chuyển phòng xuống phòng 503 các bạn chú ý .
+                <br><br>
+                <button  onclick="button1()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart1" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+        <br>
+        <div class="baiviet">
+                <a href=""><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" ><b> Phuong Anh</b></a> đã đăng trong<a href=""><b> NTPTW T2</b></a>
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">22:37 18/12/2022</div> <br>
+❌THÔNG BÁO VỀ VIỆC NỘP SẢN PHẨM CUỐI KỲ
+<p>Thầy đã mở phần nộp cuối kì trên hệ thống CST các em bắt đầu có thể nộp từ bây giờ cho đến hạn 08h00 chủ nhật nngày 25/12/2022.</p>
+<p>Các yêu cầu về nộp sản phẩm cuối kì:</p>
+<p>01. Mỗi nhóm (hoặc cá nhân) cần nộp lại 01 bản báo cáo file word đi kèm với sản phẩm. Yêu cầu file word tối thiểu 3 trang, mô tả sản chi tiết về sản phẩm, những gì nhóm đã làm được. Có 1 bảng ghi rõ phân công công việc củng từng người làm được trong sản phẩm, có 1 cột Tự đánh giá mức độ đóng góp trong sản phẩm (đơn vị %).</p>
+<p>02. Sản phẩm được nộp thành 1 file nén. Trang chủ (trang chính) đặt tên là Index.html. </p>
+<p>❌Lưu ý: đường dẫn tới ảnh (file) trong code phải thống nhất trong file nộp tránh việc thầy cô chấm mở lên không xem được</p>
+<p>03. Mỗi nhóm chỉ cử 01 người nộp và nộp đúng vào tên ca thi của mình.</p>
+<p>Sau khi nộp các nhóm không thể chỉnh sửa bài nộp.</p>
+<p>Chúc các em thi tốt, đạt kết quả cao!</p>
+                <br>
+                <button  onclick="button2()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart2" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+        <br>
+        <div class="baiviet">
+                <a href=""><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" ><b> Phuong Anh</b></a> đã đăng trong<a href=""><b> NTPTW T2</b></a>
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">07:07 19/12/2022</div> <br>
+<p>Các bạn làm demo xong gửi lên gg drive giúp mình .</p>
+<p>Trong link mỗi bạn sẽ tạo 1 thư mục con gồm msv+tên rồi nộp ảnh vào giúp mình </p>
+Link: <a href="https://drive.google.com/drive/folders/1-7x8H1l_mNe67DP6P0wfF3_T6CiH6yZ_?fbclid=IwAR1wA_hNX8voA-jmbxKc3tI3vA2N9nUsRDgvUxpbHuCkPJ-1J2yd6g8wlpU">https://drive.google.com/.../1-7x8H1l_mNe67DP6P0wfF3...</a>
+<p>🆘 hạn deadline là trưa mai(7/12)</p>
+<p>- Chúc các bạn hoàn thành sớm dl của mình 🤍</p>
+                <br>
+                <button  onclick="button3()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart3" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+</body>
+</html>

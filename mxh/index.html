@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trang chủ</title>
+</head>
+<body>
+	  <script >
+	  	var num=0;
+        function button1()
+        {
+            var heart1=document.getElementById('heart1');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart1.src=img[num];
+        }
+        function button2()
+        {
+            var heart2=document.getElementById('heart2');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart2.src=img[num];
+        }
+        function button3()
+        {
+            var heart3=document.getElementById('heart3');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart3.src=img[num];
+        }
+        function button4()
+        {
+            var heart4=document.getElementById('heart4');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart4.src=img[num];
+        }
+        function button5()
+        {
+            var heart5=document.getElementById('heart5');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart5.src=img[num];
+        }
+        function button6()
+        {
+            var heart6=document.getElementById('heart6');
+			var img=["../img/redheart.png","../img/heart.png"];
+			num++;
+			if(num>=img.length)
+			{
+				num=0;
+			}
+			heart6.src=img[num];
+        }
+		function binhluan(){ 
+        var binhluan = document.getElementById("vietbinhluan");
+   event.preventDefault();
+  document.getElementById('ketqua').innerHTML =  `<img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" > Dương Trần:  ${binhluan.value}`
+}
+        function comment(){
+            var hienthi = document.getElementById("hienthi");
+            hienthi.style.display = 'block';
+        }
+	  </script>
+      <style>
+      	*{
+			padding: 0;
+			margin: 0;
+      		list-style-type: none;
+      		text-decoration: none;
+      		line-height: 25px;
+      		font-size: 20px;
+      		color: black;
+      	}
+        .a1{
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            margin-top: -15px;
+            color: white;
+        }
+      	.menu{
+      		background-color: black;
+      		height: 50px;
+      		margin-left: 330px;
+      		width: 750px;
+      	}
+      	.menu a{
+      		width: 150px;
+      		height: 50px;
+      		float: left;
+      		padding-top: 10px;
+      		padding-left: 30px;
+      		color: white;
+      	}
+      	.menu a:hover{
+      		color: black;
+      		padding-top: 10px;  
+      		padding-left:30px;   
+       	}
+       	.a2{
+       		width: 100%;
+       	}
+       	.cot1{
+       		width: 200px;
+       		line-height: 40px;
+       		padding-left: 20px;
+       		background-color: #DDDDDD;
+       	}
+        .baiviet{
+            margin-left: 250px;
+            width: 800px;
+            background-color: #DDDDDD;
+        }
+        .anhdaidien{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+		#hienthi{
+            display: none;
+        }
+      </style>
+    <div>
+        <div class="a1">
+      	<ul class="menu">
+      		<li><a href="../mxh/index.html"><img width="35px" src="../img/iconhomewhite.png" alt="Home"></a></li>
+      		<li><a href="banbe.html"><img width="35px" src="../img/iconfriend.png" alt=""></a></li>
+      		<li><a href="nhom.html"><img src="../img/icongroup.png"  width="35px" alt=""></a></li>
+            <li><a href="../signout/signout.html"><img src="../img/iconsignout.png" width="35px" alt=""></a></li>
+      	</ul>
+        </div>
+    </div>
+    <div class="a2">
+    	<div class="cot1">
+    		<a href="taikhoan3.html"><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" > Trần Thái Dương <br>(Dương Trần)</a>
+    		<br><br>
+    		<p>~ Bạn bè ~</p>
+    		<div><a href="taikhoan1.html"><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" >  Nguyễn Hữu Duy<br> (Nguyen Huu Duy)</a></div>
+    		<br>
+            <div><a href="taikhoan2.html"><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" >  Nguyễn Thế Đức<br> (Đức Đức)</a></div>
+            <br>
+            <div><a href="banbe.html">+ Thêm bạn bè</a></div>
+    		<br><br>
+    		<p>~ Nhóm của bạn ~</p>
+    	    <div><a href="ntptwt2.html"><img class="anhdaidien" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2K6P4qcrQaWj8gR0dBeXK1AGTeg6AAiID8CFFYVtOGVW4t_Rk" >NTPTW T2</a></div>
+    	    <br>
+    		<div><a href="hnuebasketballclub.html"><img class="anhdaidien" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/309419925_628708065619009_6930023949471032140_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Vth711hxW10AX9dVzs4&_nc_ht=scontent.fhan14-3.fna&oh=00_AfB939_ONdyUeR9vHM9ZS2bb5jTwN9mZxza3VhINxdDSdg&oe=63A92749" >HNUE Basketball Club </a></div>
+    	</div>
+    </div>
+        <div >
+            <div class="baiviet" style="margin-top: -620px;" >
+                <a href="taikhoan6.html"><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" ><b> Phuong Anh</b></a> đã đăng trong<a href="ntptwt2.html"><b> NTPTW T2</b></a>
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">07:07 19/12/2022</div> <br>
+Thông báo ❌ Hnay thầy chuyển phòng xuống phòng 503 các bạn chú ý .
+                <br><br>
+                <button onclick="button1()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart1" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+			   <div id="hienthi"><form onsubmit="binhluan(event)">
+				<img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" > <input type="text" placeholder="Viết bình luận" id="vietbinhluan">
+				<input type="submit" > 
+			  </form>
+			  <br>
+			   <div id="ketqua"></div>
+            </div>
+        </div>
+        <br>
+            <div class="baiviet">
+                <a href="hnuebasketballclub.html"><img class="anhdaidien" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/309419925_628708065619009_6930023949471032140_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Vth711hxW10AX9dVzs4&_nc_ht=scontent.fhan14-3.fna&oh=00_AfB939_ONdyUeR9vHM9ZS2bb5jTwN9mZxza3VhINxdDSdg&oe=63A92749" ><b> HNUE Basketball</b></a> đã đăng một bài viết
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">19:45 11/12/2022</div> <br>
+[HNUE BASKETBALL CLUB - TRYOUT RESULT]
+<p>❤️Trước hết, chúng mình xin gửi lời cảm ơn chân thành nhất tới tất cả các bạn đã tham gia và có mặt tại buổi TRYOUT của chúng mình vừa qua.</p>
+<p>🔥Với số lượng đơn đăng ký cực kì đông đảo, chúng mình đã xem xét kỹ lưỡng và chọn ra được những gương mặt sáng giá để trở thành CTV của gia đình HNUE Basketball Club.</p>
+<p>🎉 Xin chúc mừng tất cả các ứng viên xuất sắc đã chính thức trở thành thế hệ Gen 4 của đại gia đình HBC. Hi vọng rằng chúng ta sẽ có thời gian hoạt động vui vẻ cùng nhau và tràn đầy kỉ niệm đáng nhớ🥰  </p>
+<p>🙆🏻‍♀️ Những bạn chưa may mắn có tên trong danh sách lần này cũng đừng buồn nhé, chúng mình vẫn mong chờ sự thể hiện nổi bật của các bạn ở những đợt tuyển thành viên tiếp theo🔥</p>
+<img style="margin-left: 100px;" width="200px" height="250px" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/319153267_684934976662984_1270019646508489884_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7U4-YTmfexwAX_yjTTo&_nc_ht=scontent.fhan14-3.fna&oh=00_AfBVHqmMAG2-JfEzfloU5-sAsMbrdbPwZN2nzhzIQYYtBA&oe=63A9EE86">
+<img width="200px" height="250px" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/318568740_684935096662972_8436481438715553453_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nOmH7bd1_CkAX_XYFzE&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCTxJbavu3bzBxZIqMxexAx9fjCVZzRmu_cmOheSGlt3Q&oe=63A881FD">
+<img width="200px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/318410252_684935153329633_821213474520900390_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AhHPsF-k8hMAX9sOBAu&tn=pu4Y-_CVkbU91LA5&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCgzAZBQ5_a6Mjn4yPAuJmLSqFHvoPpNK7M2goPZfnNkA&oe=63A89191">
+<img style="margin-left: 100px;" width="200px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/318407569_684934983329650_634770374438010723_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tBLkYMP9wxkAX-FJIAM&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCUvBXFNW1UtzvSeLpNryPLvLNP0d8pj-S5djV3Hc_AIQ&oe=63A985C1">
+<img width="200px" height="250px" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/319148928_684935189996296_6557981155067728319_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=G8CUsWuq9ysAX-BAg9l&_nc_ht=scontent.fhan14-3.fna&oh=00_AfBrYN738rWjfWIspiW9MPPKXVuAWV2N57-37a5LCvKjAw&oe=63A936AD">
+<img width="200px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/318079396_684935083329640_1689211319762492961_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rpYCPlYogs4AX-xCWYH&_nc_ht=scontent.fhan14-2.fna&oh=00_AfDBMfLY_FNV4wtcXfnny7QJJjcsg4LDjIwW-pXHL1dJDg&oe=63A8BFA6">
+<br>
+________________________________________
+<p>Thông tin liên hệ:</p>
+<p>💻Fanpage: HNUE Basketball Club</p>
+ <p>💌Instagam: hnuebasketballclub</p>
+ <p>📌Tiktok: hnuebasketballclub</p>
+ <p>📩Email: hnuebasketballclub@gmail.com</p>
+<p>📞Chủ nhiệm - Trịnh Thị Thảo (032 9945420)</p>
+                <br><br>
+                <button  onclick="button2()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart2" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+        <br>
+
+        <div class="baiviet">
+                <a href="hnuebasketballclub.html"><img class="anhdaidien" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/309419925_628708065619009_6930023949471032140_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Vth711hxW10AX9dVzs4&_nc_ht=scontent.fhan14-3.fna&oh=00_AfB939_ONdyUeR9vHM9ZS2bb5jTwN9mZxza3VhINxdDSdg&oe=63A92749" ><b> HNUE Basketball</b></a> đã đăng một bài viết 
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">20:15 01/12/2022</div>
+                <br>
+                | CHECK YOUR MAIL: THÔNG BÁO LỊCH TRYOUT |
+<p>📣Các bạn ơiiii, hãy mau chóng check mail để nhận lấy kết quả đăng kí và xác nhận tham gia cùng HBC ngay nhé! </p>
+<p>‼️Các bạn hãy chú ý kiểm tra cả trong phần thư rác nữa nhé, trường hợp nếu đã kiểm tra kĩ mà vẫn chưa nhận được mail thì hãy nhắn tin trực tiếp lại cho chúng mình nha!</p>
+<p>📣HBC xin thông báo về thời gian và địa điểm TRYOUT như sau:</p>
+<p>⏰Thời gian: 8h30-11h thứ 7 ngày 03/12/2022</p>
+<p>📍Địa điểm: Sân bóng rổ The Puzzle (trường Đại học Sư phạm Hà Nội - sân bóng rổ số 2 )<?
+ <p>👉Phụ thu: 20k/người </p>
+<p>🚨Một số lưu ý khi tham gia buổi tryout:</p>
+<p>- Đến đúng thời gian, địa điểm đã được ghi trên thông báo.</p>
+<p>- Các bạn sinh viên nên chuẩn bị trang phục thoải mái, dễ vận động cùng giày thể thao phù hợp.</p>
+<p>- Quan trọng là hãy chuẩn bị một tâm hồn đẹp ... </p>
+<p>Chúc các bạn chuẩn bị thật tốt cho buổi tryout sắp tới! Hẹn gặp lại các bạn vào sáng thứ 7 tuần này. </p>
+ <p>🛑Bạn nào có việc bận không thể tham gia hoặc bạn nào chưa kịp đăng kí đợt này thì cũng đừng lo lắng quá nha, chúng mình sẽ sắp xếp tổ chức thêm một buổi nữa để các bạn có cơ hội đến với đại gia đình HBC nhé!! </p>
+________________________________________
+<p>Thông tin liên hệ:</p>
+<p>💻Fanpage: HNUE Basketball Club</p>
+ <p>💌Instagam: hnuebasketballclub</p>
+ <p>📌Tiktok: hnuebasketballclub</p>
+ <p>📩Email: hnuebasketballclub@gmail.com</p>
+<p>📞Chủ nhiệm - Trịnh Thị Thảo (032 9945420)</p>
+                <img style="margin-left: 300px;" width="250px" height="350px" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/317086206_677495437406938_6361382971545017828_n.jpg?stp=dst-jpg_s720x720&_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=LQgXib4a5nMAX_Dnyzd&_nc_ht=scontent.fhan14-1.fna&oh=00_AfAuGu85raw4yI0c6-DkKevBoedu7HXfrmEhJwNFB0PgFg&oe=63A9571B">
+                <br><br>
+                <button  onclick="button3()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart3" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+        <br>
+
+        <div class="baiviet">
+                <a href="taikhoan6.html"><img class="anhdaidien" src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" ><b> Phuong Anh</b></a> đã đăng trong<a href="ntptwt2.html"><b> NTPTW T2</b></a>
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">22:37 18/12/2022</div> <br>
+❌THÔNG BÁO VỀ VIỆC NỘP SẢN PHẨM CUỐI KỲ
+<p>Thầy đã mở phần nộp cuối kì trên hệ thống CST các em bắt đầu có thể nộp từ bây giờ cho đến hạn 08h00 chủ nhật nngày 25/12/2022.</p>
+<p>Các yêu cầu về nộp sản phẩm cuối kì:</p>
+<p>01. Mỗi nhóm (hoặc cá nhân) cần nộp lại 01 bản báo cáo file word đi kèm với sản phẩm. Yêu cầu file word tối thiểu 3 trang, mô tả sản chi tiết về sản phẩm, những gì nhóm đã làm được. Có 1 bảng ghi rõ phân công công việc củng từng người làm được trong sản phẩm, có 1 cột Tự đánh giá mức độ đóng góp trong sản phẩm (đơn vị %).</p>
+<p>02. Sản phẩm được nộp thành 1 file nén. Trang chủ (trang chính) đặt tên là Index.html. </p>
+<p>❌Lưu ý: đường dẫn tới ảnh (file) trong code phải thống nhất trong file nộp tránh việc thầy cô chấm mở lên không xem được</p>
+<p>03. Mỗi nhóm chỉ cử 01 người nộp và nộp đúng vào tên ca thi của mình.</p>
+<p>Sau khi nộp các nhóm không thể chỉnh sửa bài nộp.</p>
+<p>Chúc các em thi tốt, đạt kết quả cao!</p>
+                <br><br>
+                <button  onclick="button4()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart4" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+        <br>
+        
+        <div class="baiviet">
+                <a href="khoacntt.html"><img class="anhdaidien" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/314955217_564094622385116_1285337268848223168_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ytSJshQORFAAX9-N0ez&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCr_5xycMX3Jwzfq4hBNW_KeZSUeTR4foLZadzIxKUo6g&oe=63AA1FB9" ><b>Khoa Công Nghệ Thông Tin - Trường Đại Học Sư Phạm Hà Nội</b></a> đã đăng một bài viết
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">20:07 18/11/2022</div> <br>
+                🚨| TUẦN LỄ NGHIỆP VỤ SƯ PHẠM 2022 |🚨
+<p>👩‍🏫Vậy là trải qua một tuần đầy cố gắng thì mùa Nghiệp Vụ Sư Phạm năm nay đã kết thúc thành công mỹ mãn. </p>
+<p>🤩Với sự góp mặt của 24 chi đoàn khoa CNTT, tuần lễ đã diễn ra hết sức sôi động và tràn đầy niềm vui. Các cuộc thi tuy có phần mới mẻ với các tân sinh viên K72, nhưng dù vậy các FITers K72 cũng không hề nao núng mà cũng đã cố gắng hết sức và giành được giải thưởng trong các cuộc thi</p>
+<p>❣️Để có được sự thành công như vậy, chúng em xin gửi lời cảm ơn chân thành đến thầy cô, ban tổ chức chương trình và các bạn sv khoa Công Nghệ Thông Tin đã cùng nhau cố gắng để tuần lễ diễn ra thành công tốt đẹp❣️
+<p>🥳Bên cạnh đó, chúc mừng các đội thi đã đạt được kết quả tốt trong các cuộc thi do khoa CNTT và do trường tổ chức
+<p>📸Và bây giờ hãy cùng nhau xem lại những khoảnh khắc đáng nhớ của tuần lễ vừa qua nhé!
+<p>------------
+<p>Trường Đại Học Sư Phạm Hà Nội Khoa Công Nghệ Thông Tin:
+<p>Website: http://fit.hnue.edu.vn/
+<p>Email: cntt@hnue.edu.vn
+<p>Mọi thông tin thắc mắc liên hệ:
+<p>Thầy Phạm Công Thành: 0904.031.397
+    <br><br>
+    <img style="margin-left: 100px" width="200px" height="250px" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/315070275_573985998062645_1267170995567956283_n.jpg?stp=dst-jpg_p526x395&_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=RW6YAvDQxy8AX-mxhza&_nc_ht=scontent.fhan14-3.fna&oh=00_AfDJkF7BaceOwO-zC_d6TQMkSP01TP3-Y6Z7fVd407k4HA&oe=63A95B0B">
+    <img width="200px" height="250px" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/315753526_573985681396010_6630619833359923062_n.jpg?stp=dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=Zn8sT-4AIYcAX8pKCr7&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCqeLpcvXZFkFedv8oYaw9bGec-d50kcZRprPvPLHpSEw&oe=63A9DB35">
+    <img width="200px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/315903319_573986021395976_8487229736861609523_n.jpg?stp=dst-jpg_p526x395&_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=6Ir1g5mJsFQAX-6IU6c&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCvNkJSviVIrngSWkOrA1-XZpcRIj0jvZW3zFSQh68D7g&oe=63A9C0A8">
+    <img style="margin-left: 100px" width="200px" height="250px" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/315031428_573986244729287_7274221288425164522_n.jpg?stp=dst-jpg_p526x395&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=IM8JnIoq1QEAX8TuCR-&_nc_ht=scontent.fhan14-3.fna&oh=00_AfA1HJtSHj-NTSi2AJPPxbijmOZ-U2e65clcXxKGaHP5yQ&oe=63A9F504">
+    <img width="200px" height="250px" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/314980461_573985711396007_1806637969808224720_n.jpg?stp=cp6_dst-jpg_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=uqrJhAPmhM4AX8xdkeN&_nc_ht=scontent.fhan14-3.fna&oh=00_AfAvY6Gm7Wl3ztEEdFwf8Yaz8INKTHBfLJ4pNfolbpOVAg&oe=63A94DCB">
+    <img width="200px" height="250px" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/316177709_573986194729292_581093410816526629_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=E7wzLagnxTQAX9myGO0&_nc_ht=scontent.fhan14-1.fna&oh=00_AfB9OcmIuKyLPVzIjyG9K4TQYXZzmcXW8z55mGW9mMDrSw&oe=63A92026">
+                <br><br>
+                <button  onclick="button5()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart5" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+        <br>
+
+        <div class="baiviet">
+                <a href="taikhoan7.html"><img class="anhdaidien" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/289693821_582015943280803_2102006602626651935_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=2uiio3S84wEAX-C_tad&tn=pu4Y-_CVkbU91LA5&_nc_ht=scontent.fhan14-2.fna&oh=00_AfBUcF4FPngzu0FC2Kz6RvT9GB9gt8jIv0VYbYIOef_LDQ&oe=63A89B24" ><b> MTP</b></a> đã đăng một bài viết
+                <br>
+                <div style="font-size: 14px; margin-left: 20px;">17:55 22/12/2022</div> <br>
+                5 10 15 20 ….
+                <p>🏃🏻</p>
+                <img style="margin-left: 100px;" width="300px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/320703267_846702676665089_7623766340241953123_n.jpg?stp=dst-jpg_p600x600&_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=GF1SCAUhrxAAX9dIiyg&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAwaZwzwRPPVlJnj6PG9bY9Ql24EGyAF4DzJ_JPkMSpSQ&oe=63A92140">
+                <img width="300px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/320991581_737716757911695_1217437148056963519_n.jpg?stp=dst-jpg_p600x600&_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=r_ZCWelUvzoAX9V0-7O&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAK_Kd_i3F1nNhUBFt12SU7R9K-_JToB2ktbTmOl0UV9Q&oe=63A91579">
+                <img  style="margin-left: 100px;" width="200px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/321515477_470146218616851_753303233975379838_n.jpg?stp=dst-jpg_p600x600&_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NvVRUYoifysAX-OIBOO&_nc_ht=scontent.fhan14-2.fna&oh=00_AfDynbyRzEtP_ALQ4_qIJLayp0bpFNl8ivpH5wkr6gmIlQ&oe=63A91A93">
+                <img width="200px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/320382763_468792998782789_1971291722203828090_n.jpg?stp=dst-jpg_p600x600&_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ip2TbTrKAJcAX8REwr9&_nc_ht=scontent.fhan14-2.fna&oh=00_AfDjlx5TRKVnqbLlHjING6Gi4NpNEYNkfWaMSoN7D0X2ew&oe=63A930FD">
+                <img width="200px" height="250px" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/320798376_1090936438207592_7564633110218461398_n.jpg?stp=dst-jpg_p600x600&_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=b3w0taaL-ucAX-vAJCb&_nc_ht=scontent.fhan14-2.fna&oh=00_AfDd-SmyVWOFSW3-rNfjiq92qBn69YnF4kYe3FhY_JjtrA&oe=63A93EBE">
+                <br><br>
+                <button  onclick="button6()" style="border: none; background: #DDDDDD; padding-left: 10px;">
+					<img id="heart6" width="32px" src="../img/heart.png" alt="">
+				</button>
+				<button onclick	="comment()" style="border: none; background: #DDDDDD; padding-left: 30px;">
+					<img src="../img/comment.png" width="32px" alt="">
+			   </button>
+            </div>
+        </div>
+</body>
+</html>
